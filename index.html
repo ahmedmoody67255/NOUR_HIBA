@@ -482,7 +482,57 @@
   const buttons = document.querySelectorAll('.card, .call-bar');
   buttons.forEach(btn => {
     btn.addEventListener('click', () => {
-      buttons.forEach(b => {
+      buttons.forEach(b => {<div class="grid">
+  <!-- WhatsApp -->
+  <a class="card whatsapp"
+     href="https://wa.me/201125277000"
+     target="_blank"
+     rel="noopener">
+    <!-- نفس أيقونة WhatsApp الموجودة عندك -->
+    <span class="label">WhatsApp</span>
+  </a>
+  <!-- Facebook -->
+  <a class="card facebook"
+     href="https://www.facebook.com/noura.hiba122?mibextid=ZbWKwL"
+     target="_blank"
+     rel="noopener">
+    <!-- نفس أيقونة Facebook الموجودة عندك -->
+    <span class="label">Facebook</span>
+  </a>
+  <!-- Instagram -->
+  <a class="card instagram"
+     href="https://www.instagram.com/hand_made.925?igsi=MTk2N3R5OTBrYjU5cg=="
+     target="_blank"
+     rel="noopener">
+    <svg viewBox="0 0 32 32"
+         fill="none"
+         stroke="currentColor"
+         stroke-width="1.8">
+      <rect x="5" y="5" width="22" height="22" rx="6"/>
+      <circle cx="16" cy="16" r="5"/>
+      <circle cx="23" cy="9" r="1.2"
+              fill="currentColor"
+              stroke="none"/>
+    </svg>
+    <span class="label">Instagram</span>
+  </a>
+  <!-- Facebook Group -->
+  <a class="card facebook"
+     href="https://www.facebook.com/groups/436030060764655/?ref=share&mibextid=NSMWBT"
+     target="_blank"
+     rel="noopener">
+    <!-- نفس أيقونة Facebook الموجودة عندك -->
+    <span class="label">Facebook Group</span>
+  </a>
+  <!-- TikTok -->
+  <a class="card tiktok"
+     href="https://www.tiktok.com/@nour_store122"
+     target="_blank"
+     rel="noopener">
+    <!-- نفس أيقونة TikTok الموجودة عندك -->
+    <span class="label">TikTok</span>
+  </a>
+</div>
         if (b !== btn) b.classList.remove('active');
       });
       btn.classList.add('active');
